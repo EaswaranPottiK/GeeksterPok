@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GeeksterMon</title>
+        <script defer src="script.js"></script>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>GeeksterMon</h1>
+        <main>
+
+            <select name="type" class="type-filter" id="pokTypes">
+                <option value="">Types</option>
+            </select>
+
+            <input type="button" value="Filter by Type"/>
+            
+            <button onClick="window.location.reload();">Reset</button> 
+
+            <input id="pokemon-search-input" type="text" name="" placeholder="Enter Pokémon Name"/>
+
+        </main>
+        
+        
+        <section id="cardAll">
+
+            <div class="flip-card" id="bulbasaur">
+                <div class="flip-card-inner" id="grass">
+                    <div class="front-pokemon-card">
+
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" class="front-pokemon-image">
+                        <p class="front-poke-id">#1</p>
+                        <h2><a href="/pokemon.html?pokemon_id=1">Bulbasaur</a></h2><p></p>
+                        <p class="front-pokemon-type">GRASS</p>
+                    </div>
+                        
+                    <div class="back-pokemon-card">
+                            <h1></h1>
+                            <p class="back-poke-id">#1</p>
+                            <h2 class="back-pokemon-name">Bulbasaur</h2>
+                            <p class="back-pokemon-abilities"><p>Abilities:<br>overgrow, chlorophyll</p>  
+                    </div>
+
+                </div>
+            </div>
+            
+            
+        </section>
+        
+        
+    </body>
+</html>
